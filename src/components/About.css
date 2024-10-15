@@ -1,0 +1,130 @@
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  line-height: 1;
+  margin: 0;
+  background: #fdeff2;
+  color: #e43c5c;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.section-title h3 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+.section-title h3 span {
+  color: #e43c5c;
+}
+.section-title p {
+  width: 45%;
+}
+.section-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 450;
+  line-height: 25px;
+  font-size: 17px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.about .content ul li {
+  padding-left: 28px;
+  position: relative;
+}
+.about .content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #e43c5c;
+  line-height: 1;
+}
+.about .content ul li + li {
+  margin-top: 10px;
+}
+.about .content .btn-learn-more {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #e43c5c;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #e43c5c;
+}
+
+.about .content .btn-learn-more:hover {
+  background-color: #f53d5f;
+  color: #fff !important; /* Force text color to white on hover */
+}
+.about-content p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 0.9rem;
+    padding: 6px 15px;
+  }
+
+  .section-title h3 {
+    font-size: 1.8rem;
+  }
+
+  .section-title p {
+    width: 90%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about .content .btn-learn-more {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .about .content ul li {
+    padding-left: 20px;
+  }
+
+  .about .content ul i {
+    font-size: 18px;
+  }
+}

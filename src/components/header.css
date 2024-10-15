@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1300px;
+}
+
+.logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.menu-toggle {
+  display: none;
+}
+.logo a {
+  color: #fff;
+}
+
+.header-area {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  padding-top: 17px;
+  height: 85px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header-area.scrolled {
+  background-color: rgba(20, 20, 23, 0.8);
+}
+
+.header-area .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-area .row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.head {
+  flex: 1;
+}
+
+.main {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  position: relative;
+  margin-left: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: #e82574;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 85px;
+    right: 0;
+    background-color: rgba(20, 20, 23, 0.9);
+    width: 100%;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0;
+  }
+
+  .menu li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}

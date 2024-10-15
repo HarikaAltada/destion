@@ -1,0 +1,59 @@
+/* cta */
+.cta-text {
+  text-align: center !important;
+}
+.cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)),
+    url("D:\destion\destion\public\icons\cta-bg.jpg") center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+.cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.cta p {
+  color: #fff;
+  line-height: 1.5;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.cta .cta-btn {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.cta-btn:hover {
+  background-color: #f53d5f;
+  border: 2px solid #f53d5f;
+  color: #fff !important; /* Force text color to white on hover */
+}
+
+@media only screen and (max-width: 480px) {
+  .cta {
+    padding: 40px 0;
+  }
+  .cta h3 {
+    font-size: 22px;
+  }
+  .cta p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  .cta .cta-btn {
+    font-size: 14px;
+    padding: 6px 20px;
+  }
+}

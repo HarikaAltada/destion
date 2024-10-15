@@ -1,0 +1,127 @@
+/* sevices */
+.services-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.services .icon-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center;
+  height: 380px;
+  width: 300px;
+}
+
+.services .icon {
+  margin-bottom: 15px;
+}
+.services .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #e43c5c;
+}
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.services .title a {
+  color: #111;
+}
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.services .icon-box::before {
+  content: "";
+  position: absolute;
+  top: 100%; /* Start off screen at the bottom */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e43c5c; /* The hover background color */
+  transition: all 0.3s ease-in-out;
+  z-index: -1; /* Position it behind the content */
+}
+
+.services .icon-box:hover::before {
+  top: 0;
+}
+
+.services .icon-box:hover .icon i {
+  color: #fdeff2;
+}
+.services .icon-box:hover .description {
+  color: #fdeff2;
+}
+.services .icon-box:hover .title a {
+  color: #fdeff2;
+}
+
+@media (max-width: 768px) {
+  .services-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .services .icon-box {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height for content */
+    padding: 30px 20px; /* Adjust padding for mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .services .icon-box {
+    padding: 20px 15px; /* Further reduce padding */
+  }
+
+  .services .icon i {
+    font-size: 36px; /* Reduce icon size */
+  }
+
+  .services .title {
+    font-size: 16px; /* Adjust title font size */
+  }
+
+  .services .description {
+    font-size: 14px; /* Adjust description font size */
+    line-height: 24px; /* Adjust line height */
+  }
+}
+@media (max-width: 480px) {
+  .services .icon-box {
+    padding: 15px 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .services .icon i {
+    font-size: 40px;
+  }
+
+  .services .title {
+    font-size: 16px;
+  }
+
+  .services .description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .services-content {
+    gap: 15px;
+  }
+  .services-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
